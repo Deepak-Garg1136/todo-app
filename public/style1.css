@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Libre Baskerville", serif;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -93,4 +95,46 @@ form p a {
   color: #dad3d3;
   background: linear-gradient(#5b146f, #ff009c);
   opacity: 0.5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .form {
+    width: 80vw;
+  }
+
+  .input {
+    width: 70vw;
+  }
+
+  .heading {
+    font-size: 5vw;
+  }
+
+  form p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 90vw;
+  }
+
+  .input {
+    width: 80vw;
+    height: 6vh;
+  }
+
+  .heading {
+    font-size: 8vw;
+  }
+
+  form p {
+    font-size: 14px;
+  }
+
+  .pagenotfound {
+    font-size: 10vh;
+  }
 }

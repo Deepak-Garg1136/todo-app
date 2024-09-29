@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Libre Baskerville", serif;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -14,6 +16,7 @@
   background: linear-gradient(#5b146f, #ff009c);
   opacity: 0.5;
 }
+
 .heading,
 .logout {
   color: #fff;
@@ -22,6 +25,7 @@
 .logout {
   text-decoration: none;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -34,6 +38,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .left {
   display: flex;
   justify-content: center;
@@ -44,10 +49,8 @@ body {
   background-color: rgb(241, 240, 238);
   opacity: 0.5;
 }
+
 .right {
-  /* display: flex; */
-  /*  justify-content: center; */
-  /* align-items: center; */
   flex-direction: column;
   width: 50vw;
   height: auto;
@@ -124,4 +127,50 @@ ul li.task {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), 6px 6px 10px rgba(0, 0, 0, 0.2),
     9px 9px 15px rgba(0, 0, 0, 0.2);
   opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 100vw;
+    height: auto;
+  }
+
+  .input_box {
+    width: 80vw;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .heading,
+  .logout {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 2vh;
+  }
+  .input_box {
+    font-size: 16px;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+
+  .left,
+  .right {
+    width: 100vw;
+  }
 }
